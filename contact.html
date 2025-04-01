@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - VinnovateIT VIT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #2C2F36; 
+            color: #E6E6E6; 
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            
+        }
+        .header {
+            background-color: #111;
+            padding: 20px;
+            width: 100%;
+            color: #F5F5F5; 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            
+        }
+        .nav_container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .nav_links {
+            display: flex;
+            gap: 30px;
+        }
+        .nav_links a {
+            color: #F5F5F5; 
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .nav_links a:hover {
+            color: #FF6F61; 
+        }
+        .logo img {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+        h1{
+            margin-top: 20px;
+            margin-left: 20px;
+            color: #FFAB91;
+        }
+        h2{
+            margin-top: 20px;
+            margin-left: 20px;
+            color: #FFAB91;
+        }
+        p{
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin-top: 110px;
+            margin-left: 250px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .contactinfo {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #111;
+        }
+        .contactinfo p {
+            margin: 5px 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        footer {
+            background-color: #111;
+    color: #F5F5F5;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="nav_container">
+            <nav class="nav_links">
+                <a href="mainpag.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="project.html">Projects</a>
+                <a href="event.html">Events</a>
+                <a href="contact.html">Contact us</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Contact Us - VinnovateIT VIT</h2>
+        <div class="contactinfo">
+            <p><strong>Email:</strong> vinnovateit@vit.ac.in</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Location:</strong> VIT Vellore, Tamil Nadu, India</p>
+        </div>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <footer>
+        <p>2025 VinnovateIT. All rights reserved.</p>
+    </footer>
+</body>
+</html>

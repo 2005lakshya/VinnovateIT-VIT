@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events - VinnovateIT</title>
+  <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #2C2F36; 
+            color: #E6E6E6; 
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header {
+            background-color: #111;
+            padding: 20px;
+            width: 100%;
+            color: #F5F5F5; 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .nav_container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .nav_links {
+            display: flex;
+            gap: 30px;
+        }
+        .nav_links a {
+            color: #F5F5F5; 
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .nav_links a:hover {
+            color: #FF6F61; 
+        }
+        .logo img {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .eventlist {
+            margin-top: 100px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #FFAB91;
+        }
+
+        .eventcont {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .event {
+            background: white;
+            padding: 20px;
+            width: 300px;
+            border-radius: 15px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .event:hover {
+            transform: translateY(-10px);
+        }
+
+        .event h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #111;
+        }
+
+        .event p {
+            font-size: 1rem;
+            color: #444;
+            margin-bottom: 15px;
+        }
+
+        .event a {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .event a:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            background-color: #111; 
+            color: #F5F5F5; 
+            padding: 15px 0;
+            text-align: center;
+            margin-top: auto;
+        }
+
+  </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="nav_container">
+            <nav class="nav_links">
+                <a href="mainpag.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="project.html">Projects</a>
+                <a href="event.html">Events</a>
+                <a href="contact.html">Contact us</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="eventlist">
+      <h2>Innovative Projects</h2>
+      <div class="eventcont">
+        <div class="event">
+          <h3>📚 Study Hub</h3>
+          <p>A collaborative study platform where students can share notes, participate in discussion forums, and use AI-generated summaries to enhance learning.</p>
+          <a href="https://studyhub.vinnovateit.com/" target="_blank">STUDY HUB</a>
+        </div>
+
+        <div class="event">
+          <h3>🍽️ MessIT</h3>
+          <p>An essential food menu app for VIT students that provides daily mess updates, meal ratings, and real-time notifications to help students plan their meals.</p>
+          <a href="https://messit.vinnovateit.com/" target="_blank">MESSIT</a>
+        </div>
+
+        <div class="event">
+          <h3>🛏️ Bunk Buddies</h3>
+          <p>BunkBuddies is an online platform designed to simplify the process of finding a compatible roommate for students.</p>
+          <a href="https://bunkbuddies.vinnovateit.com/" target="_blank">BUNKBUDDIES</a>
+        </div>
+      </div>
+    </section>
+
+  <footer>
+    <p>2025 VinnovateIT. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VinnovateIT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #2C2F36; 
+            color: #E6E6E6; 
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .header {
+            background-color: #111;
+            padding: 20px;
+            width: 100%;
+            color: #F5F5F5; 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            
+        }
+        .nav_container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .nav_links {
+            display: flex;
+            gap: 30px;
+        }
+        .nav_links a {
+            color: #F5F5F5; 
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .nav_links a:hover {
+            color: #FF6F61; 
+        }
+        .logo img {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+        h1{
+            margin-top: 20px;
+            margin-left: 20px;
+            color: #FFAB91;
+        }
+        h2{
+            margin-top: 20px;
+            margin-left: 20px;
+            color: #FFAB91;
+        }
+        p{
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        .animalmovie-container {
+            width: 100%;
+            height: 500px;
+            position: relative;
+            margin-top: 67px;
+            overflow: hidden;
+        }
+        .animalmovie {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            transition: opacity 1s ease-in-out;
+        }
+        .animalmovie-container::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to bottom, rgba(33, 31, 33, 0) 0%, rgb(33, 31, 33) 100%);
+        }
+        .domains{
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            margin-left: 100px;
+            margin-right: 100px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .domain {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .domain h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .domain p {
+            font-size: 16px;
+            color: #555;
+        }
+        footer {
+            background-color: #111; 
+            color: #F5F5F5; 
+            padding: 15px 0;
+            margin-top: 10px;
+            text-align: center;
+        }       
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="nav_container">
+            <nav class="nav_links">
+                <a href="mainpag.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="project.html">Projects</a>
+                <a href="event.html">Events</a>
+                <a href="contact.html">Contact us</a>
+            </nav>
+        </div>
+    </header>
+    <div class="animalmovie-container">
+        <img src="1.jpg" class="animalmovie" id="animalImage1">
+        <img src="2.jpg" class="animalmovie" id="animalImage2">
+        <img src="3.jpg" class="animalmovie" id="animalImage2">
+        <img src="4.jpg" class="animalmovie" id="animalImage2">
+    </div>
+    <div>
+        <h1>VinnovateIT</h1>
+        <p>​VinnovateIT is the official Innovation and Incubation Lab of the School of Information Technology and Engineering (SITE) at Vellore Institute of Technology (VIT), Vellore. Established in 2014, the organization aims to foster innovation by providing resources and mentorship to students interested in various technological domains.​</p>
+        <h2>
+            Mission and Activities:
+        </h2>
+        <p>
+            VinnovateIT supports its members in developing projects both technically and entrepreneurially. The organization offers resources across multiple technologies and motivates members to excel in technical fields. By undertaking projects that are both technical and highly innovative, VinnovateIT guides members towards entrepreneurship, highlighting its long-term benefits. 
+        </p>
+        <h2 class="domains">
+            DOMAINS
+        </h2>
+    </div>
+    <section class="section">
+        <div class="domain">
+            <h2>App Development</h2>
+            <p>Creating cutting-edge mobile and web applications with the latest technology.</p>
+        </div>
+        <div class="domain">
+            <h2>Machine Learning</h2>
+            <p>Building smart systems that learn and adapt through data.</p>
+        </div>
+        <div class="domain">
+            <h2>Web Development</h2>
+            <p>Designing responsive, user-friendly websites with the latest web technologies.</p>
+        </div>
+        <div class="domain">
+            <h2>UI/UX Designing</h2>
+            <p>Crafting seamless and engaging user interfaces and experiences.</p>
+        </div>
+        <div class="domain">
+            <h2>Competitive Coding</h2>
+            <p>Enhancing problem-solving skills through competitive coding challenges.</p>
+        </div>
+    </section>
+    <footer>
+        <p> 2025 VinnovateIT. All rights reserved.</p>
+      </footer>
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.animalmovie');
+        function changeSlide() {
+            images[currentIndex].style.opacity = 0;
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].style.opacity = 1;
+        }
+        setInterval(changeSlide, 1500);
+    </script>
+</body>
+</html>
