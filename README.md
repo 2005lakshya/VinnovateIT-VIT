@@ -1,0 +1,1 @@
+I developed a website for VinnovateIT VIT using html, css, and javascript. The website provides details about its projects, events, teams, and domains. It features a clean and modern UI with smooth animations, ensuring an engaging user experience. 
